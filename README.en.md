@@ -36,7 +36,26 @@ PUT: Used to completely update existing data. For example, updating a user's pro
 DELETE: Used to delete specific data from the server. For example, deleting a user account.
 
 These methods help ensure clear and organized communication between the frontend and backend. In REST APIs, we use these methods to perform different operations in a standardized way.
+<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
 
+## What is the difference between POST and PUT?
+Both POST and PUT are used to send data to the server, but their purposes and typical use cases are different.
+
+POST is usually used to create new data. For example, when submitting a user registration form, we use POST. The server creates a new user.
+
+PUT is used to update existing data. For instance, if we want to change a user’s email address, we use PUT.
+
+One key difference is:
+
+POST can create a new record every time it is called (like a new object with a different ID).
+
+PUT updates the content of an existing record with a specific ID, keeping the ID the same.
+
+In short:
+→ POST = Create.
+→ PUT = Update.
+
+<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
 </p>
