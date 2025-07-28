@@ -20,6 +20,21 @@ For example, when a user wants to view a list of products through the app interf
 
 Thanks to REST APIs, systems can work independently from each other. This makes the software easier to scale and manage.
 
+## What are HTTP methods? What are they used for? (GET, POST, PUT, DELETE)
+HTTP methods allow a client (usually the frontend) to tell the server (backend) what action it wants to perform.
+
+Here’s a brief explanation of the four most commonly used HTTP methods:
+
+GET: Used to retrieve data from the server. For example, when we want to view a list of products, the frontend sends a GET request to the backend.
+
+POST: Used to send and save new data to the server. For instance, submitting a registration form is done via a POST request.
+
+PUT: Used to completely update existing data. For example, updating a user's profile information is done using PUT.
+
+DELETE: Used to delete specific data from the server. For example, deleting a user account.
+
+These methods help ensure clear and organized communication between the frontend and backend. In REST APIs, we use these methods to perform different operations in a standardized way.
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
 </p>

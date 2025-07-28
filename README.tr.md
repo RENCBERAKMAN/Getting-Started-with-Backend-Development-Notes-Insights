@@ -20,8 +20,21 @@ REST, ‘Representational State Transfer’ anlamına gelir ve HTTP protokolü �
 
 REST API’ler sayesinde sistemler birbirinden bağımsız çalışabilir, bu da yazılımın ölçeklenmesini ve yönetilmesini kolaylaştırır.
 
+## HTTP metodları nelerdir? Ne işe yarar?(GET, POST, PUT, DELETE)
 
+“HTTP metodları, bir istemcinin (genellikle frontend’in), sunucuya (backend’e) ne yapmak istediğini belirtmesini sağlar.
 
+En yaygın kullanılan dört temel HTTP metodunu şöyle açıklayabilirim:
+
+GET: Sunucudan veri almak için kullanılır. Örneğin, bir ürün listesini görüntülemek istediğimizde, frontend backend’e GET isteği gönderir.
+
+POST: Sunucuya yeni veri göndermek ve kaydetmek için kullanılır. Mesela bir kayıt formu gönderildiğinde bu işlem POST ile yapılır.
+
+PUT: Var olan veriyi tamamen güncellemek için kullanılır. Örneğin, bir kullanıcının profil bilgilerini güncellerken PUT kullanılır.
+
+DELETE: Belirli bir veriyi sunucudan silmek için kullanılır. Örneğin, bir kullanıcı hesabını silmek için.
+
+Bu metodlar sayesinde frontend ve backend arasında düzenli ve anlaşılır bir iletişim olur. REST API’lerde de bu metodları kullanarak farklı işlemleri standart bir şekilde yapabiliyoruz.
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
 </p>
