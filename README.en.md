@@ -10,3 +10,16 @@ While frontend developers build the interface users interact with, backend devel
 For example, when a user submits a form, it’s the backend system that processes that data — validating, storing, and sometimes analyzing it.
 
 I personally chose the backend path because I enjoy working with logic and data. Solving complex problems and building the foundation of a system feels more meaningful and exciting to me.
+
+## What is a REST API and what is it used for?
+A REST API is a structure that allows different systems to communicate with each other. It's especially used so the frontend and backend can exchange data.
+
+REST stands for "Representational State Transfer" and works over the HTTP protocol. An API is like a communication gateway that lets an application talk to the outside world.
+
+For example, when a user wants to view a list of products through the app interface, the frontend sends this request to the backend via a REST API. The backend receives the request, processes it, fetches the data from the database, and sends it back to the frontend.
+
+Thanks to REST APIs, systems can work independently from each other. This makes the software easier to scale and manage.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
+</p>
