@@ -71,6 +71,35 @@ Sunucu ölçeklenebilir olur (çünkü hafızasında kullanıcı bilgisi tutmaz)
 Yük dengeleme (load balancing) kolaylaşır.
 
 Hızlı, basit ve bakımı kolay sistemler kurulur.
+<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+
+## 🔍MVC (Model-View-Controller) Mimarisi Nedir ve Neden Kullanılır?
+MVC, üç ana bileşene ayrılmış bir yazılım mimarisidir:
+
+Model (Veri ve İş Mantığı)
+Uygulamanın tüm verileri, kuralları ve iş mantığını içerir. Veritabanıyla iletişim, veri işleme ve kurallar bu katmanda yer alır.
+
+View (Görünüm)
+Kullanıcının etkileşime geçtiği arayüzdür. Görsel tasarımlar, butonlar, formlar gibi kullanıcıya gösterilen her şey bu katmandadır.
+
+Controller (Kontrolcü)
+Kullanıcıdan gelen istekleri işler, uygun Model ile iletişim kurar ve sonucu View’a gönderir. Aslında Model ile View arasındaki bir köprüdür.
+
+-----✅ NEDEN MVC KULLANILIR?-----
+1. Kodun Ayrıştırılması (Separation of Concerns)
+Her bileşenin kendi sorumluluğu vardır. Böylece kod daha anlaşılır, düzenli ve bakımı kolay hale gelir. Örneğin; görünüm değişirse yalnızca View’ı güncellemek yeterlidir.
+
+2. Test Edilebilirlik Artar
+Model ve Controller ayrı olduğundan birimleri test etmek daha kolaydır. Bu, özellikle büyük projelerde otomatik testlerin etkinliği açısından büyük avantaj sağlar.
+
+3. Yeniden Kullanılabilirlik (Reusability)
+Aynı veri (Model), farklı görünümlerle (View) birden fazla kez kullanılabilir. Örneğin aynı kullanıcı bilgisi, farklı sayfalarda farklı şekillerde gösterilebilir.
+
+4. Ekipte Paralel Geliştirme Kolaylaşır
+Frontend geliştiricileri View üzerinde çalışırken, Backend geliştiricileri Model ve Controller üzerinde çalışabilir. Böylece ekip daha verimli çalışır.
+
+5. Genişlemeye Açık Mimaridir
+Uygulama büyüdükçe parçaları büyütmek veya yenilerini eklemek daha kolay hale gelir. Özellikle modüler tasarım isteyen projeler için idealdir.
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
 </p>
