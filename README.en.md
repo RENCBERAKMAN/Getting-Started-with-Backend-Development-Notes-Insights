@@ -95,6 +95,16 @@ While frontend developers work on the View, backend developers can work on the M
 
 5. Scalable Architecture
 As the application grows, it's easier to expand parts or add new components. It's especially ideal for projects that require modular design.
+<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+
+## 🔍What are Request and Response?
+Request and Response define the communication between the client and the server in web-based systems. A Request is the message sent by the client to the server. This request typically includes actions such as viewing a page, sending data, or retrieving information. For example, when a user accesses a website, the browser sends a GET request to the server to retrieve the page content.
+
+Once the server receives this request, it processes it and sends back a Response. This response could be an HTML page, a JSON object, an error message, or any other type of result.
+
+In short: a Request represents the client's demand, while a Response is the server's reply to that demand. This pair forms the foundation of modern web applications. Communication usually takes place over the HTTP or HTTPS protocols, and each step follows specific rules.
+
+Thanks to this structure, the actions users perform through a browser can be understood, processed, and responded to by the server.
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
 </p>

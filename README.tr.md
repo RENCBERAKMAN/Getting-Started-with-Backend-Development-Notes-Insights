@@ -100,6 +100,16 @@ Frontend geliştiricileri View üzerinde çalışırken, Backend geliştiriciler
 
 5. Genişlemeye Açık Mimaridir
 Uygulama büyüdükçe parçaları büyütmek veya yenilerini eklemek daha kolay hale gelir. Özellikle modüler tasarım isteyen projeler için idealdir.
+<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+## 🔍Request ve Response ne demektir?
+Request ve Response, web tabanlı sistemlerde istemci (client) ile sunucu (server) arasındaki iletişimi tanımlar. "Request", istemcinin sunucuya gönderdiği istektir. Bu istek, genellikle bir sayfa görüntüleme, veri gönderme veya bilgi alma talebini içerir. Örneğin bir web sitesine giriş yapıldığında, tarayıcı sunucuya bir "GET" isteği göndererek sayfanın içeriğini talep eder.
+
+Sunucu, bu isteği aldıktan sonra işlemi gerçekleştirir ve buna karşılık bir "Response", yani yanıt gönderir. Bu yanıt HTML sayfası, bir JSON verisi, bir hata mesajı ya da işlem sonucunu bildiren başka türde bir içerik olabilir.
+
+Kısaca: Request, istemcinin talebini, Response ise sunucunun bu talebe verdiği cevabı temsil eder. Bu ikili, modern web uygulamalarının temel taşıdır. İletişim genellikle HTTP ya da HTTPS protokolleri üzerinden sağlanır ve her adım belirli kurallarla işler.
+
+Bu yapı sayesinde kullanıcıların tarayıcı üzerinden yaptıkları işlemler sunucu tarafından anlaşılır, işlenir ve karşılık verilir.
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
 </p>
