@@ -90,7 +90,7 @@ Kullanıcının etkileşime geçtiği arayüzdür. Görsel tasarımlar, butonlar
 Controller (Kontrolcü)
 Kullanıcıdan gelen istekleri işler, uygun Model ile iletişim kurar ve sonucu View’a gönderir. Aslında Model ile View arasındaki bir köprüdür.
 
------✅ NEDEN MVC KULLANILIR?-----
+----✅ NEDEN MVC KULLANILIR?----
 1. Kodun Ayrıştırılması (Separation of Concerns)
 Her bileşenin kendi sorumluluğu vardır. Böylece kod daha anlaşılır, düzenli ve bakımı kolay hale gelir. Örneğin; görünüm değişirse yalnızca View’ı güncellemek yeterlidir.
 
