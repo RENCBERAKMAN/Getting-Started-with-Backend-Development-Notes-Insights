@@ -10,7 +10,8 @@ Frontend, kullanıcının doğrudan etkileşimde olduğu arayüzü inşa ederken
 Örneğin bir kullanıcı bir form gönderdiğinde, bu veriyi alıp veritabanına kaydeden, doğrulayan ve gerektiğinde analiz eden sistem backend tarafında çalışır.
 
 Ben de backend tarafını seçtim çünkü işin mantık ve veri kısmıyla ilgilenmek, karmaşık problemleri çözmek ve sistemin temelini oluşturmak bana çok daha anlamlı ve cazip geliyor.
-<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+<hr style="border: 5px solid #4CAF50; margin: 20px 0;">
+
 
 
 ## 🔍Rest API nedir? Ne işe yarar?
@@ -21,7 +22,8 @@ REST, ‘Representational State Transfer’ anlamına gelir ve HTTP protokolü �
 Örneğin, bir kullanıcı uygulama arayüzünden bir ürün listesi görmek istediğinde, frontend bu isteği backend’e bir REST API aracılığıyla gönderir. Backend bu isteği alır, işleyip veritabanından veriyi çeker ve frontend’e geri gönderir.
 
 ✅REST API’ler sayesinde sistemler birbirinden bağımsız çalışabilir, bu da yazılımın ölçeklenmesini ve yönetilmesini kolaylaştırır.
-<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+
+<hr style="border: 5px solid #4CAF50; margin: 20px 0;">
 
 ## 🔍HTTP metodları nelerdir? Ne işe yarar?(GET, POST, PUT, DELETE)
 
@@ -38,7 +40,8 @@ PUT: Var olan veriyi tamamen güncellemek için kullanılır. Örneğin, bir kul
 DELETE: Belirli bir veriyi sunucudan silmek için kullanılır. Örneğin, bir kullanıcı hesabını silmek için.
 
 ✅Bu metodlar sayesinde frontend ve backend arasında düzenli ve anlaşılır bir iletişim olur. REST API’lerde de bu metodları kullanarak farklı işlemleri standart bir şekilde yapabiliyoruz.
-<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+
+<hr style="border: 5px solid #4CAF50; margin: 20px 0;">
 
 ## 🔍POST ve PUT arasındaki fark nedir?
 POST ve PUT, her ikisi de sunucuya veri göndermek için kullanılır ama amaçları ve kullanıldıkları senaryolar farklıdır.
@@ -56,7 +59,8 @@ Ama PUT çağrıldığında belirli bir ID’ye sahip olan veriyi aynı tutarak 
 ✅Kısaca:
 → POST = Oluştur.
 → PUT = Güncelle.
-<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+
+<hr style="border: 5px solid #4CAF50; margin: 20px 0;">
 
 ## 🔍Stateless mimari nedir?
 Stateless, yani durumsuz mimari, her isteğin (request) birbirinden bağımsız olduğu anlamına gelir. Yani bir istemciden (örneğin bir tarayıcıdan) sunucuya yapılan her istek, sıfırdan yapılır gibi değerlendirilir.
@@ -71,7 +75,8 @@ Sunucu ölçeklenebilir olur (çünkü hafızasında kullanıcı bilgisi tutmaz)
 Yük dengeleme (load balancing) kolaylaşır.
 
 Hızlı, basit ve bakımı kolay sistemler kurulur.
-<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+
+<hr style="border: 5px solid #4CAF50; margin: 20px 0;">
 
 ## 🔍MVC (Model-View-Controller) Mimarisi Nedir ve Neden Kullanılır?
 MVC, üç ana bileşene ayrılmış bir yazılım mimarisidir:
@@ -100,7 +105,10 @@ Frontend geliştiricileri View üzerinde çalışırken, Backend geliştiriciler
 
 5. Genişlemeye Açık Mimaridir
 Uygulama büyüdükçe parçaları büyütmek veya yenilerini eklemek daha kolay hale gelir. Özellikle modüler tasarım isteyen projeler için idealdir.
-<hr style="border: 2px solid #4CAF50; margin: 20px 0;">
+
+<hr style="border: 5px solid #4CAF50; margin: 20px 0;">
+
+
 ## 🔍Request ve Response ne demektir?
 Request ve Response, web tabanlı sistemlerde istemci (client) ile sunucu (server) arasındaki iletişimi tanımlar. "Request", istemcinin sunucuya gönderdiği istektir. Bu istek, genellikle bir sayfa görüntüleme, veri gönderme veya bilgi alma talebini içerir. Örneğin bir web sitesine giriş yapıldığında, tarayıcı sunucuya bir "GET" isteği göndererek sayfanın içeriğini talep eder.
 
@@ -110,6 +118,49 @@ Kısaca: Request, istemcinin talebini, Response ise sunucunun bu talebe verdiği
 
 Bu yapı sayesinde kullanıcıların tarayıcı üzerinden yaptıkları işlemler sunucu tarafından anlaşılır, işlenir ve karşılık verilir.
 
+<hr style="border: 5px solid #4CAF50; margin: 20px 0;">
+
+
+
+## 🌐 HTTP Durum Kodları (200, 201, 400, 401, 403, 404, 500)
+HTTP durum kodları, istemciden (client) gelen isteğin sunucu (server) tarafından nasıl sonuçlandığını gösteren sayısal ifadelerdir.
+Her kod, isteğin başarılı mı, hatalı mı yoksa başka bir işleme mi ihtiyaç duyduğunu belirtir.
+
+200 – OK
+İstek başarılı bir şekilde işlendi ve sunucu beklenen yanıtı gönderdi.
+Örnek: Bir ürün listesi istendiğinde, sunucu listeyi JSON formatında döner.
+
+201 – Created
+İstek başarılı oldu ve sunucu yeni bir kaynak oluşturdu.
+Örnek: Kayıt formu gönderildiğinde yeni kullanıcı oluşturulması.
+
+400 – Bad Request
+İstek hatalı, eksik veya sunucu tarafından anlaşılamıyor.
+Örnek: Zorunlu alanları boş bırakarak form göndermek.
+
+401 – Unauthorized
+Kimlik doğrulama yapılmamış ya da geçersiz. Erişim için geçerli bir giriş bilgisi gerekir.
+Örnek: Oturum açmadan yetkili bir API’ye istek göndermek.
+
+403 – Forbidden
+Kimlik doğrulama yapılmış olsa bile erişim izni yok.
+Örnek: Normal bir kullanıcının yönetici paneline girmeye çalışması.
+
+404 – Not Found
+İstenen kaynak sunucuda bulunamadı.
+Örnek: Var olmayan bir URL’ye gitmek.
+
+500 – Internal Server Error
+Sunucu, isteği işlerken beklenmeyen bir hata ile karşılaştı.
+Örnek: Kod hatası veya veritabanı bağlantı sorunu.
+
+ ✅Özet:
+
+2xx → Başarılı işlemler
+
+4xx → İstemci kaynaklı hatalar
+
+5xx → Sunucu kaynaklı hatalar
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=footer&text=Thanks%20for%20visiting!%20🚀&fontSize=30&fontColor=ffffff" />
 </p>
